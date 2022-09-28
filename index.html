@@ -1,0 +1,31 @@
+<html>
+   <!-- <div id="rasa-chat-widget" data-websocket-url="http://0.0.0.0:5005" ></div>
+<script src="https://unpkg.com/@rasahq/rasa-chat" type="application/javascript" headers: {Access-Control-Allow-Origin: *}></script> -->
+
+   <body>
+     <script>
+        !(function () {
+          let e = document.createElement("script"),
+            t = document.head || document.getElementsByTagName("head")[0];
+          (e.src =
+            "https://cdn.jsdelivr.net/npm/rasa-webchat@1.x.x/lib/index.js"),
+            (e.async = !0),
+            (e.onload = () => {
+              window.WebChat.default(
+                {
+
+                  customData: { language: "en" },
+                  socketUrl: "http://0.0.0.0:5005",
+                  headers: { 'Access-Control-Allow-Origin': "*" },
+                  title: "Medi Bot",
+                  subtitle: "Find out your nearest Hospitals",
+                },
+                null
+              );
+            }),
+            t.insertBefore(e, t.firstChild);
+
+       })();
+      </script>
+   </body>
+</html>

@@ -1,0 +1,273 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: yeah
+  examples: |
+    - [yeah](yeah)
+    - [Yeah](yeah)
+    - yeah
+    - yeah
+    - yeah
+
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+    - nope
+    - not
+    - None
+    - Nope
+    - No
+- intent: thanks
+  examples: |
+    - Thanks
+    - Thanks for your help
+    - Thank you
+    - Thank you so much
+    - You are nice
+    - It's very useful
+    - It's means a lot
+    - Kinda helpful
+    - help ful
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: ask_hospital
+  examples: |
+    - i need?
+    - can you find some hospitals for me?
+    - near hospitals?
+    - nearest hospitals?
+    - find some nearest hospitals?
+    - can you find  some hospitals?
+    - any hospitals near me?
+    - any hospital in this area?
+    - show some hospitals in this area?
+- intent: inform
+  examples: |
+    - Ariyalur
+    - Chengalpattu
+    - Chennai
+    - Coimbatore
+    - Cuddalore
+    - Dharmapuri
+    - Dindigul
+    - Erode
+    - Kallakurichi
+    - Kanchipuram
+    - Kanyakumari
+    - Karur
+    - Krishnagiri
+    - Madurai
+    - Nagapattinam
+    - Namakkal
+    - Nilgiris
+    - Perambalur
+    - Pudukkottai
+    - Ramanathapuram
+    - Ranipet
+    - Salem
+    - Sivaganga
+    - Tenkasi
+    - Thanjavur
+    - Theni
+    - Thoothukudi
+    - Tiruchirappalli
+    - Trichy
+    - Tirunelveli
+    - Tirupathur
+    - Tiruppur
+    - Tiruvallur
+    - Tiruvannamalai
+    - Tiruvarur
+    - Vellore
+    - Viluppuram
+    - Virudhunagar
+
+- intent: hospital_id
+  examples: |
+    - Hospital4ccab4f71ce5236a0eabc065
+    - Hospitalfe3640bb9ad14b1279049827
+    - Hospital8fe0b1cbb55b42ab8d07b271
+    - Hospital035354f2b0d34b263ebd191e
+    - Hospital672b99859d6a48b307fc401e
+    - Hospital3da0826ea9414f2f9139e615
+    - Hospitalf61da04584df467e493d713c
+    - Hospitalt35354f2b0d34b263ebd19sd
+    - Hospitale35354f2b0d34b2dsdvf191e
+    - Hospitalf34234f2b0d34b263ebd191e
+    - Hospital34234nldfn2424rd323dgfsd
+    - Hospitalkf3434njl23nm34kjbk423nc
+    - Hospitalje4jk93kl324kmnlol3440jl
+    - Hospital8324bewyiew38hihds948834
+    - Hospital8734hewifw9327423hjdhs3r
+    - Hospital839823yre92h3rnjdhe92h2j
+    - Hospital98324shdfiheifsddfdfs733
+    - Hospital874n2343yr8734yrc383423e
+    - Hospital8234823yeh923he2h23he2h3
+
+- intent: Doc_name
+  examples: |
+    - Dr.R.Hariharan
+    - Dr.G.Joyce Esther
+    - Dr.M.Areif Mohamed
+    - Dr.A.Anu
+    - Dr.G.Sakthi
+
+
+- intent: ask_appointment
+  examples: |
+    - can you please send appointment?
+    - send appointment please?
+    - send appointment request please?
+    - appointment please?
+    - appointment?
+
+- intent: ask_yes
+  examples: |
+    - Yes
+    - yes
+    - yes
+    - yes
+    - yes
+    
+
+- intent: give_name
+  examples: |
+    - [Goki](name)
+    - [Joy](name)
+    - [Areif](name)
+    - [Sakthi](name)
+    - [Anu](name)
+    - [Aslam](name)
+    - [Arun](name)
+    - [Gans](name)
+    - [Ganapathy](name)
+    - [Arun Karthikeyan](name)
+    - [Thamarai Selvan](name)
+    - [Sameena](name)
+    - [Suganya](name)
+    - [Saroja](name)
+    - [Devika](name)
+    - [Radhika](name)
+    - [Domnic](name)
+    - [Pranav](name)
+    - [Pradeep](name)
+    - [Tharun](name)
+    - [Thendral](name)
+    - [Arasu](name)
+    - [Ramesh](name)
+    - [Jeeva](name)
+    - [Ajith](name)
+    - [Raj Kumar](name)
+    - [Raj Manikam](name)
+   
+
+
+- intent: give_gender
+  examples: |
+    - [Male](gender)
+    - [Female](gender)
+    - [Trans](gender)
+
+- intent: give_dob
+  examples: |
+    - [03/09/2001](dob)
+    - [03/09/2001](dob)
+    - [23/09/1873](dob)
+    - [01/04/2012](dob)
+    - [09/12/1999](dob)
+    - [23/04/1898](dob)
+    - [31/01/2011](dob)
+    - [19/09/2000](dob)
+  
+
+- intent: give_number
+  examples: |
+    - [9873682342](number)
+    - [9944063769](number)
+    - [9736472234](number)
+    - [7398423990](number)
+    - [9932749823](number)
+    - [9064875344](number)
+    - [9374583645](number)
+    - [9874398544](number)
+    - [7832479232](number)
+    - [9972983232](number)
+    - [6824378292](number)
+    - [7932723222](number)
+    - [7234982732](number)

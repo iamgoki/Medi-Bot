@@ -1,0 +1,86 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+    - intent: greet
+    - action: utter_greet
+
+- story: find hospitals
+  steps:
+    - intent: ask_hospital
+    - action: utter_ask_hospital
+
+- story: find hospitals 1
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: ask_hospital
+    - action: utter_ask_hospital
+    - intent: inform
+    - action: action_find_hospital
+    - intent: hospital_id
+    - action: action_find_address
+    - action: utter_ask_doctor
+    - intent: ask_yes
+    - action: utter_Doc
+    - intent: Doc_name
+    - action: action_Doc_details
+    - action: utter_appointment
+    - intent: yeah
+      entities:
+        - yeah: yeah
+    - action: utter_patient
+    - action: utter_ask_name
+    - intent: give_name
+      entities:
+        - name: Goki
+    - action: utter_ask_gender
+    - intent: give_gender
+      entities:
+      - gender: Male
+    - action: utter_ask_dob
+    - intent: give_dob
+      entities:
+        - dob: 03/09/2001
+    - action: action_numbers
+    - action: utter_ask_number
+    - intent: give_number
+      entities:
+        - number: 9873264223
+    - action: action_details
+
+- story: find hospitals 2
+  steps:
+    - intent: ask_hospital
+    - action: utter_ask_hospital
+    - intent: inform
+    - action: action_find_hospital
+    - intent: hospital_id
+    - action: action_find_address
+    - action: utter_ask_doctor
+    - intent: ask_yes
+    - action: utter_Doc
+    - intent: Doc_name
+    - action: action_Doc_details
+    - action: utter_appointment
+    - intent: deny
+    - action: utter_goodbye
+
+- story: find hospitals 3
+  steps:
+    - intent: ask_hospital
+    - action: utter_ask_hospital
+    - intent: inform
+    - action: action_find_hospital
+    - intent: hospital_id
+    - action: action_find_address
+    - action: utter_ask_doctor
+    - intent: deny
+    - action: utter_goodbye
+
+- story: find hospitals 3
+  steps:
+    - intent: thanks
+    - action: utter_thanks
